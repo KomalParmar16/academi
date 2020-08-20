@@ -878,6 +878,12 @@ i.icon {
     color: var(--color_primary);
     margin-bottom: 0;
 }
+#footer .footer-bootom #footernavigation a {
+    display: inline-block;
+}
+#footer .footer-bootom #footernavigation {
+    padding-top: 10px;
+}
 
 @media (min-width: 992px) {
     .navbar-light .container {

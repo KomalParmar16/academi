@@ -212,6 +212,13 @@ if (is_siteadmin()) {
     $setting = new admin_setting_configtext($name, $title, $description, $default);
     $temp->add($setting);
 
+    $name = 'theme_academi/inurl';
+    $title = get_string('inurl', 'theme_academi');
+    $description = get_string('inurldesc', 'theme_academi');
+    $default = get_string('inurl_default', 'theme_academi');
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $temp->add($setting);
+
     $settings->add($temp);
      /*  Footer Settings end */
 }

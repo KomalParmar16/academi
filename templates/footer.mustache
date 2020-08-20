@@ -84,6 +84,9 @@
             {{# gpurl}}
                 <li class="smedia-04"><a href="{{gpurl}}"><i class="fa fa-google-plus-square"></i></a></li>
             {{/ gpurl}}
+            {{# inurl}}
+                <li class="smedia-05"><a href="{{inurl}}"><i class="fa fa-linkedin-square"></i></a></li>
+            {{/ inurl}}
             </ul>
           </div>
         {{/ url}}
@@ -92,13 +95,19 @@
       </div>
     </div>
   </div>
-
+<div>
     {{# copyright_footer}}
     <div class="footer-bootom">
         <p>{{{copyright_footer}}}</p>
+        <nav id = footernavigation>
+                
+                   <a href="http://www.fmdqotc.com/policy-terms-and-conditions/terms-of-use" target="_blank">Terms of use | </a>
+                   <a href="http://www.fmdqotc.com/policy-terms-and-conditions/disclaimer" target="_blank">Disclaimer | </a>
+                   <a href="http://www.fmdqotc.com/">FMDQ Homepage</a>
+                
+        </nav>  
     </div>
     {{/ copyright_footer}}
-
     <nav class="nav navbar-nav d-md-none">
         {{# output.custom_menu_flat }}
             <ul class="list-unstyled pt-3">
@@ -108,7 +117,6 @@
     </nav>
   </div>
 {{/footerblock}}
-
   </footer>
 <!--E.O.Footer-->
 

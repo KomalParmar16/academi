@@ -64,6 +64,7 @@ $fburl = theme_academi_get_setting('fburl');
 $pinurl = theme_academi_get_setting('pinurl');
 $twurl = theme_academi_get_setting('twurl');
 $gpurl = theme_academi_get_setting('gpurl');
+$inurl = theme_academi_get_setting('inurl');
 $address = theme_academi_get_setting('address');
 $emailid = theme_academi_get_setting('emailid');
 $phoneno = theme_academi_get_setting('phoneno');
@@ -77,7 +78,7 @@ $phone = get_string('phone', 'theme_academi');
 $email = get_string('email', 'theme_academi');
 $sfollowus = get_string('followus', 'theme_academi');
 
-$url = ($fburl != '' || $pinurl != '' || $twurl != '' || $gpurl != '') ? 1 : 0;
+$url = ($fburl != '' || $pinurl != '' || $twurl != '' || $gpurl != '' || $inurl != '') ? 1 : 0;
 $block3 = ($address != '' || $phoneno != '' || $emailid != '' || $url != 0) ? 1 : 0;
 $footerblock1 = ($footlogo != 0 || $footnote != '' || $infolink != '' || $url != 0 || $block3 != 0) ? 1 : 0;
 
@@ -127,6 +128,7 @@ $templatecontext = [
     "pinurl" => $pinurl,
     "twurl" => $twurl,
     "gpurl" => $gpurl,
+    "inurl" => $inurl,
     "address" => $address,
     "emailid" => $emailid,
     "phoneno" => $phoneno,
